@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="text-center py-12 text-gray-400">
                 <i class="fas fa-box-open text-5xl mb-4"></i>
                 <p class="text-lg">Select a product to view details and submit an inquiry.</p>
-                <a href="export.html" class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-medium">
+                <a href="Export.html" class="mt-4 inline-block text-blue-600 hover:text-blue-800 font-medium">
                     <i class="fas fa-arrow-left mr-2"></i>Browse our products
                 </a>
             </div>
