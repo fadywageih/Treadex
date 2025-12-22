@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeX - Global Trading Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="Images/Logo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#0f172a',
+                        accent: '#f59e0b',
+                        header: 'rgb(247,182,51)',
+                        customBlue: 'rgb(7, 13, 90)'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <div class="fixed top-0 left-0 right-0 z-[9999]" id="exportBanner">
+        <div class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-3 px-4 animate-slideDown">
+            <div class="container mx-auto">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-3">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center animate-pulse">
+                            <i class="fas fa-rocket text-sm"></i>
+                        </div>
+                        <div>
+                            <span class="font-bold text-lg">🚀 <span class="text-yellow-300">EXPORT</span> IS OUR
+                                PASSION!</span>
+                            <span class="hidden md:inline ml-4 text-blue-100">
+                                Leading Egyptian exports to global markets
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <a href="Export.html"
+                            class="bg-white hover:bg-yellow-100 text-blue-700 font-bold px-5 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 animate-pulse shadow-lg">
+                            <i class="fas fa-external-link-alt mr-2"></i>
+                            Start Exporting
+                        </a>
+                        <button onclick="closeBanner()" class="text-white hover:text-yellow-300 transition-colors">
+                            <i class="fas fa-times text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="export.html" class="export-rectangle-vertical export-link">
+        <div class="export-rectangle-content-vertical">
+            <span>
+                <i class="fas fa-globe-americas world-icon"></i>
+                export to all world
+            </span>
+        </div>
+    </a>
+    <header class="bg-header shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center space-x-3">
+                    <img src="Images/Logo.png" alt="Logo" class="h-12 w-auto">
+                </div>
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="#" class="text-white hover:text-blue-300 font-medium transition duration-300">Home</a>
+                    <a href="CBMCalculator.html"
+                        class="text-white hover:text-blue-300 font-medium transition duration-300">CBM Calculator</a>
+                    <a href="GetInTouch.html"
+                        class="text-white hover:text-blue-300 font-medium transition duration-300">Get In Touch</a>
+                    <a href="https://www.track-trace.com/" target="_blank" rel="noopener noreferrer"
+                        class="text-white hover:text-blue-300 font-medium transition duration-300">
+                        Tracking
+                    </a>
+                    <div class="relative group">
+                        <a href="#"
+                            class="text-white hover:text-blue-300 font-medium transition duration-300 flex items-center">
+                            Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div
+                            class="absolute top-full left-0 w-48 bg-white shadow-xl rounded-lg py-2 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300">
+                            <a href="Trade.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Transport</a>
+                            <a href="import.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Import</a>
+                            <a href="Export.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Export</a>
+                            <a href="Shipping.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">
+                                Shipping</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <div class="hidden md:flex items-center space-x-3 ">
+                        <a href="https://www.facebook.com/search/top?q=trade%20x%20for%20business%20solution&locale=ar_AR"
+                            class="text-white hover:text-blue-300 transition duration-300">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tradexforbusinesssolution"
+                            class="text-white hover:text-blue-300 transition duration-300">
+                            <i class="fab fa-instagram text-lg"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/trade-x-for-business-solutions/"
+                            class="text-white hover:text-blue-300 transition duration-300">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                        <a href="https://x.com/TradeXfbs?t=4dRdxHObZMZOnFpCdmNuTQ&s=09"
+                            class="text-white hover:text-blue-300 transition duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="lg:hidden p-2 text-white" id="mobileMenuButton">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-menu-overlay fixed inset-0 bg-black bg-opacity-50 z-50 lg:hidden" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu fixed top-0 left-0 right-0 bg-header shadow-2xl z-50 lg:hidden" id="mobileMenu">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-8">
+                <img src="Images/Logo.png" alt="Logo" class="h-10 w-auto">
+                <button class="text-white hover:text-blue-300" id="closeMobileMenu">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <nav class="space-y-6">
+                <a href="#"
+                    class="block text-white hover:text-blue-300 font-medium text-lg transition duration-300">Home</a>
+                <a href="CBMCalculator.html"
+                    class="block text-white hover:text-blue-300 font-medium text-lg transition duration-300">CBM
+                    Calculator</a>
+                <a href="GetInTouch.html"
+                    class="block text-white hover:text-blue-300 font-medium text-lg transition duration-300">Get In
+                    Touch</a>
+                <a href="https://www.track-trace.com/"
+                    class="block text-white hover:text-blue-300 font-medium text-lg transition duration-300">Tracking</a>
+                <div class="relative">
+                    <button
+                        class="flex items-center justify-between w-full text-white hover:text-blue-300 font-medium text-lg transition duration-300"
+                        id="mobileServicesButton">
+                        Services
+                        <i class="fas fa-chevron-down text-sm ml-2"></i>
+                    </button>
+                    <div class="mt-2 pl-4 space-y-3 hidden" id="mobileServicesDropdown">
+                        <a href="Trade.html"
+                            class="block text-blue-200 hover:text-white transition duration-300">Transport</a>
+                        <a href="import.html"
+                            class="block text-blue-200 hover:text-white transition duration-300">Import</a>
+                        <a href="Export.html"
+                            class="block text-blue-200 hover:text-white transition duration-300">Export</a>
+                        <a href="Shipping.html"
+                            class="block text-blue-200 hover:text-white transition duration-300">Shipping</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="mt-8 pt-6 border-t border-blue-300">
+                <div class="flex space-x-4 justify-center">
+                    <a href="https://www.facebook.com/search/top?q=trade%20x%20for%20business%20solution&locale=ar_AR"
+                        class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                        <i class="fab fa-facebook-f text-white"></i>
+                    </a>
+                    <a href="https://www.instagram.com/tradexforbusinesssolution"
+                        class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                        <i class="fab fa-instagram text-white"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/trade-x-for-business-solutions/"
+                        class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                        <i class="fab fa-linkedin-in text-white"></i>
+                    </a>
+                    <a href="https://x.com/TradeXfbs?t=4dRdxHObZMZOnFpCdmNuTQ&s=09"
+                        class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300"
+                        target="_blank">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-blue-300">
+                <div class="space-y-3 text-sm">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-phone text-blue-200 text-xs"></i>
+                        <span class="text-blue-200">+201221523127</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-envelope text-blue-200 text-xs"></i>
+                        <span class="text-blue-200">info@tradexeg.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="relative">
+        <div class="relative hero-section overflow-hidden">
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100" id="slide1">
+                <div class="absolute inset-0 bg-black opacity-40"></div>
+                <img src="Images/Cover.jpg" alt="Global Trade" class="w-full h-full object-cover">
+                <div class="absolute inset-0 flex items-center">
+                    <div class="container mx-auto px-4 text-white mb-40">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-4">WHERE BORDERS MEET OPPORTUNITIES</h2>
+                        <p class="text-xl mb-8">Your Pathway to Seamless Success</p>
+                        <a href="#about-section"
+                            class="custom-blue hover:bg-customBlue text-white px-8 py-3 rounded-lg font-semibold transition duration-300 inline-block">
+                            Explore Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" id="slide2">
+                <div class="absolute inset-0 bg-black opacity-40"></div>
+                <img src="Images/Cover1.jpg" alt="Shipping Logistics" class="w-full h-full object-cover">
+                <div class="absolute inset-0 flex items-center">
+                    <div class="container mx-auto px-4 text-white mb-40">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-4">TRANSPORT, IMPORT AND EXPORT</h2>
+                        <p class="text-xl mb-8">Comprehensive customs services for your business</p>
+                        <a href="#services-section"
+                            class="custom-blue hover:bg-customBlue text-white px-8 py-3 rounded-lg font-semibold transition duration-300 inline-block">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+            <button class="w-3 h-3 rounded-full bg-white opacity-100 slider-dot" data-slide="0"></button>
+            <button class="w-3 h-3 rounded-full bg-white opacity-50 slider-dot" data-slide="1"></button>
+        </div>
+    </section>
+    <section class="bg-header py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center">
+                <div class="flex items-center justify-center space-x-6 mb-6">
+                    <img src="Images/Logo.png" alt="Main Logo" class="h-16 w-auto">
+                    <span class="text-4xl text-white">&</span>
+                    <img src="Images/asset-12-YZ9X68ZvPysMvz9l.png" alt="Secondary Logo" class="h-16 w-auto">
+                </div>
+                <h1 class="text-3xl md:text-4xl font-bold text-white text-center">Your Pathway to Seamless Success</h1>
+            </div>
+        </div>
+    </section>
+    <section id="about-section" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">Know More About Our Services</h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        With years of experience in global trade, we provide comprehensive solutions
+                        that streamline your transport, import, and export operations with professional customs
+                        services.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500 mb-2">
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-blue-600 text-xl mr-3"></i>
+                                <p class="text-blue-800 font-semibold">
+                                    Export Specialists: Delivering your products worldwide with precision and expertise
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            <span class="text-gray-700">Professional customs services</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            <span class="text-gray-700">Efficient transport solutions</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            <span class="text-gray-700">Import and export expertise</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                            <span class="text-gray-700">Seamless border crossing</span>
+                        </div>
+                    </div>
+                    <a href="#contact-section"
+                        class="mt-8 custom-blue hover:bg-customBlue text-white px-8 py-3 rounded-lg font-semibold transition duration-300 inline-block">
+                        Get Started
+                    </a>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        alt="Trade Operations" class="rounded-lg shadow-2xl w-full h-80 object-cover">
+                    <div class="absolute -bottom-6 -left-6 custom-blue text-white p-6 rounded-lg shadow-xl">
+                        <div class="text-3xl font-bold">5+</div>
+                        <div class="text-sm">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-20">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4">Featured Products</h3>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Discover our premium selection of handcrafted goods and organic materials
+                    </p>
+                </div>
+                <div class="products-slider-container">
+                    <div class="products-slider-track" id="productsSliderTrack">
+                        <div class="product-image-container">
+                            <img src="Images/ForProducts/Garbage_Bag/Garbage_Bag_white.png" alt="Handcrafted Ceramics"
+                                class="product-image">
+                        </div>
+                        <div class="product-image-container">
+                            <img src="Images/ForProducts/Plats/Plats.png" alt="Organic Cotton Textiles"
+                                class="product-image">
+                        </div>
+                        <div class="product-image-container">
+                            <img src="Images/ForProducts/Coffee_Cup/Coffee_Cup.jpg" alt="Ceramic Collection"
+                                class="product-image">
+                        </div>
+                        <div class="product-image-container">
+                            <img src="Images/ForProducts/fine/fine2.jpg" alt="Ceramic Collection" class="product-image">
+                        </div>
+                        <div class="product-image-container">
+                            <img src="Images/ForProducts/Pizza_box/Pizza_box1.jpg" alt="Cotton Fabric"
+                                class="product-image">
+                        </div>
+                        <div class="product-image-container">
+                            <img src="Images/ForProducts/Coffee_Cup/Coffee_Cup1.jpg" alt="Cotton Fabric"
+                                class="product-image">
+                        </div>
+                    </div>
+                    <div class="slider-overlay"></div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-control" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-control" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="text-center mt-10">
+                    <a href="Export.html"
+                        class="inline-flex items-center justify-center custom-blue hover:bg-customBlue text-white px-8 py-3 rounded-lg font-semibold transition duration-300">
+                        <i class="fas fa-external-link-alt mr-2"></i>
+                        Go to Export
+                    </a>
+                </div>
+            </div>
+            <div class="mt-20">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4">Our Comprehensive Services</h3>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        From consulting and strategy development to implementation and support, our comprehensive
+                        services can help your business thrive.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div
+                        class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                        <div class="h-64 bg-blue-500 relative overflow-hidden">
+                            <img src="Images/Service1.png"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-800 mb-3">Exporting Services</h4>
+                            <p class="text-gray-600">
+                                Trade X simplifies the complexities of exporting. We leverage our market knowledge and
+                                global network to ensure your products reach their destination efficiently and
+                                profitably.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                        <div class="h-64 bg-green-500 relative overflow-hidden">
+                            <img src="Images/Service2.png"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-800 mb-3">Importing Solutions</h4>
+                            <p class="text-gray-600">
+                                Trade X navigates the intricacies of importing, ensuring seamless product sourcing from
+                                around the world. We handle regulatory compliance, logistics, and cost optimization for
+                                a stress-free experience.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                        <div class="h-64 bg-purple-500 relative overflow-hidden">
+                            <img src="Images/Service3.png"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-800 mb-3">Shipping Services</h4>
+                            <p class="text-gray-600">
+                                Trade X offers reliable and competitive shipping solutions for all your cargo needs. Our
+                                partnerships with trusted carriers guarantee the timely and secure movement of your
+                                goods, wherever they're headed.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+                        <div class="h-64 bg-orange-500 relative overflow-hidden">
+                            <img src="Images/Service4.png"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-xl font-bold text-gray-800 mb-3">Trading Services</h4>
+                            <p class="text-gray-600">
+                                Trade X facilitates international trade with expertise and market understanding. We
+                                connect you with the right partners, negotiate favorable terms, and help expand your
+                                business across borders.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services-section" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Professional Services</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div
+                    class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 group">
+                    <div class="p-6">
+                        <div
+                            class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4 group-hover:custom-blue transition duration-300">
+                            <i class="fas fa-truck text-blue-600 text-2xl group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Transport</h3>
+                        <p class="text-gray-600 mb-4">Efficient cargo transport solutions with reliable delivery</p>
+                        <a href="Trade.html"
+                            class="text-blue-600 font-semibold flex items-center group-hover:text-blue-700">
+                            Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 group">
+                    <div class="p-6">
+                        <div
+                            class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-green-600 transition duration-300">
+                            <i class="fas fa-download text-green-600 text-2xl group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Import</h3>
+                        <p class="text-gray-600 mb-4">Streamlined import processes and customs clearance</p>
+                        <a href="import.html"
+                            class="text-green-600 font-semibold flex items-center group-hover:text-green-700">
+                            Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 group">
+                    <div class="p-6">
+                        <div
+                            class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-purple-600 transition duration-300">
+                            <i class="fas fa-upload text-purple-600 text-2xl group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Export</h3>
+                        <p class="text-gray-600 mb-4">Global export services with documentation support</p>
+                        <a href="Export.html"
+                            class="text-purple-600 font-semibold flex items-center group-hover:text-purple-700">
+                            Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 group">
+                    <div class="p-6">
+                        <div
+                            class="w-14 h-14 bg-orange-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-orange-600 transition duration-300">
+                            <i class="fas fa-passport text-orange-600 text-2xl group-hover:text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Shipping</h3>
+                        <p class="text-gray-600 mb-4">Professional customs clearance and documentation</p>
+                        <a href="Shipping.html"
+                            class="text-orange-600 font-semibold flex items-center group-hover:text-orange-700">
+                            Learn More <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="contact-section" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col items-center justify-center">
+            <div class="w-full max-w-3xl text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">Contact Us</h2>
+                <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+                    Get in touch with our team for any inquiries about our transport, import, export, and customs services.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="bg-blue-100 p-3 rounded-full">
+                                <i class="fas fa-envelope text-blue-600"></i>
+                            </div>
+                            <div class="text-left">
+                                <h3 class="font-semibold text-gray-800">Email</h3>
+                                <p class="text-gray-600">info@tradexeg.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="bg-blue-100 p-3 rounded-full">
+                                <i class="fas fa-phone text-blue-600"></i>
+                            </div>
+                            <div class="text-left">
+                                <h3 class="font-semibold text-gray-800">Phone</h3>
+                                <p class="text-gray-600">+201221523127</p>
+                                <p class="text-gray-600">+201000907370</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="bg-blue-100 p-3 rounded-full">
+                                <i class="fas fa-map-marker-alt text-blue-600"></i>
+                            </div>
+                            <div class="text-left">
+                                <h3 class="font-semibold text-gray-800">Address</h3>
+                                <p class="text-gray-600 text-sm">20 Al fath street fourth district block 19016 Al obour, Qalyubia, Egypt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="bg-blue-100 p-3 rounded-full">
+                                <i class="fas fa-clock text-blue-600"></i>
+                            </div>
+                            <div class="text-left">
+                                <h3 class="font-semibold text-gray-800">Opening Hours</h3>
+                                <p class="text-gray-600 text-sm">Sat-Wed: 9:00 - 18:00</p>
+                                <p class="text-gray-600 text-sm">Thu: 9:00 - 16:00</p>
+                                <p class="text-gray-600 text-sm">Fri: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-block mb-6 animate-pulse">
+                    <span
+                        class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-2 rounded-full font-semibold text-sm uppercase tracking-wider">
+                        <i class="fas fa-star mr-2"></i>Export Specialists
+                    </span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                    We <span class="text-blue-600 relative">
+                        Export
+                        <span
+                            class="absolute -bottom-1 left-0 w-full h-1 bg-yellow-400 transform scale-x-0 animate-pulse"></span>
+                    </span> Excellence Worldwide
+                </h2>
+                <p class="text-xl text-gray-600 mb-10 max-w-3xl mx-auto">
+                    With <span class="font-bold text-blue-600">20+ years</span> of export expertise, we bridge Egyptian
+                    products with global markets. Our end-to-end export solutions ensure your goods reach
+                    international buyers efficiently and profitably.
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="text-3xl font-bold text-blue-600 mb-2">50+</div>
+                        <div class="text-gray-600">Countries Reached</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="text-3xl font-bold text-blue-600 mb-2">1000+</div>
+                        <div class="text-gray-600">Products Exported</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="text-3xl font-bold text-blue-600 mb-2">98%</div>
+                        <div class="text-gray-600">On-Time Delivery</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="text-3xl font-bold text-blue-600 mb-2">24/7</div>
+                        <div class="text-gray-600">Export Support</div>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="Export.html"
+                        class="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        <i class="fas fa-globe-americas mr-3"></i>
+                        Explore Export Services
+                        <i class="fas fa-arrow-right ml-3 animate-bounce"></i>
+                    </a>
+                    <a href="GetInTouch.html"
+                        class="inline-flex items-center justify-center bg-white hover:bg-gray-50 text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        <i class="fas fa-calendar-check mr-3"></i>
+                        Request Export Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <img src="Images/Logo.png" alt="Logo" class="h-10 w-auto mb-6">
+                    <p class="text-gray-300 mb-6">
+                        Your trusted partner for transport, import, export, and customs services with seamless border
+                        solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-pink-600 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-700 transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://x.com/TradeXfbs?t=4dRdxHObZMZOnFpCdmNuTQ&s=09"
+                            class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-black transition duration-300">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#about-section"
+                                class="text-gray-300 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#services-section"
+                                class="text-gray-300 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="#contact-section"
+                                class="text-gray-300 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Our Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="Trade.html"
+                                class="text-gray-300 hover:text-white transition duration-300">Transport</a></li>
+                        <li><a href="import.html"
+                                class="text-gray-300 hover:text-white transition duration-300">Import</a></li>
+                        <li><a href="Export.html"
+                                class="text-gray-300 hover:text-white transition duration-300">Export</a></li>
+                        <li><a href="Shipping.html"
+                                class="text-gray-300 hover:text-white transition duration-300">Shipping</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Us</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-map-marker-alt text-blue-400"></i>
+                            <span class="text-gray-300">20 Al fath street fourth district block 19016 Al obour,
+                                Qalyubia, Egypt</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-blue-400"></i>
+                            <span class="text-gray-300">+201221523127</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-blue-400"></i>
+                            <span class="text-gray-300">info@tradexeg.com</span>
+                        </div>
+                                                <div class="flex items-center space-x-3">
+                            <i class="fas fa- text-blue-400">Vat</i>
+                            <span class="text-gray-300">504612425</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2025 TRADE & GOLDEN EAGLE. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>

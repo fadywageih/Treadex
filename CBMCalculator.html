@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBM Calculator - TradeX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="Images/Logo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/CBMCalculator.css">
+
+</head>
+
+<body class="bg-gray-50">
+    <header class="header-bg shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center space-x-3">
+                    <img src="Images/Logo.png" alt="Logo" class="h-12 w-auto">
+                </div>
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html"
+                        class="text-white hover:text-blue-300 font-medium transition duration-300">Home</a>
+                    <a href="CBMCalculator.html"
+                        class="text-white font-bold border-b-2 border-white transition duration-300">CBM Calculator</a>
+                    <a href="GetInTouch.html"
+                        class="text-white hover:text-blue-300 font-medium transition duration-300">Get In Touch</a>
+                    <a href="https://www.track-trace.com/" target="_blank" rel="noopener noreferrer"
+                        class="text-white hover:text-blue-300 font-medium transition duration-300">
+                        Tracking
+                    </a>
+                    <div class="relative group">
+                        <a href="#"
+                            class="text-white hover:text-blue-300 font-medium transition duration-300 flex items-center">
+                            Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div
+                            class="absolute top-full left-0 w-48 bg-white shadow-xl rounded-lg py-2 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300">
+                            <a href="Trade.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Transport</a>
+                            <a href="import.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Import</a>
+                            <a href="Export.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Export</a>
+                            <a href="Shipping.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Shipping</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <div class="hidden md:flex items-center space-x-3">
+                        <a href="https://www.facebook.com/search/top?q=trade%20x%20for%20business%20solution&locale=ar_AR"
+                            class="text-white hover:text-blue-300 transition duration-300">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tradexforbusinesssolution"
+                            class="text-white hover:text-blue-300 transition duration-300">
+                            <i class="fab fa-instagram text-lg"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/trade-x-for-business-solutions/"
+                            class="text-white hover:text-blue-300 transition duration-300">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                        <a href="https://x.com/TradeXfbs?t=4dRdxHObZMZOnFpCdmNuTQ&s=09"
+                            class="text-white hover:text-blue-300 transition duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="lg:hidden p-2 text-white" id="mobileMenuButton">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-menu-overlay fixed inset-0 bg-black bg-opacity-50 z-50 lg:hidden" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu fixed top-0 left-0 right-0 shadow-2xl z-50 lg:hidden" id="mobileMenu">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-8">
+                <img src="Images/Logo.png" alt="Logo" class="h-10 w-auto">
+                <button class="text-white hover:text-blue-300" id="closeMobileMenu">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <nav class="space-y-6">
+                <a href="index.html"
+                    class="block text-white hover:text-blue-300 font-medium text-lg transition duration-300">Home</a>
+                <a href="CBMCalculator.html"
+                    class="block text-white font-bold border-b-2 border-white text-lg transition duration-300">CBM
+                    Calculator</a>
+                <a href="GetInTouch.html"
+                    class="block text-white hover:text-blue-300 font-medium text-lg transition duration-300">Get In
+                    Touch</a>
+                <a href="https://www.track-trace.com/"
+                    class="block text-white hover:text-blue-300 font-medium text-lg transition duration-300">Tracking</a>
+                <div class="relative">
+                    <button
+                        class="flex items-center justify-between w-full text-white hover:text-blue-300 font-medium text-lg transition duration-300"
+                        id="mobileServicesButton">
+                        Services
+                        <i class="fas fa-chevron-down text-sm ml-2"></i>
+                    </button>
+                    <div class="mt-2 pl-4 space-y-3 hidden" id="mobileServicesDropdown">
+                        <a href="Trade.html"
+                            class="block text-blue-200 hover:text-white transition duration-300">Transport</a>
+                        <a href="import.html"
+                            class="block text-blue-200 hover:text-white transition duration-300">Import</a>
+                        <a href="Export.html"
+                            class="block text-blue-200 hover:text-white transition duration-300">Export</a>
+                        <a href="Shipping.html"
+                            class="block text-blue-200 hover:text-white transition duration-300">Shipping</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="mt-8 pt-6 border-t border-blue-300">
+                <div class="flex space-x-4 justify-center">
+                    <a href="https://www.facebook.com/search/top?q=trade%20x%20for%20business%20solution&locale=ar_AR"
+                        class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                        <i class="fab fa-facebook-f text-white"></i>
+                    </a>
+                    <a href="https://www.instagram.com/tradexforbusinesssolution"
+                        class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                        <i class="fab fa-instagram text-white"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/trade-x-for-business-solutions/"
+                        class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                        <i class="fab fa-linkedin-in text-white"></i>
+                    </a>
+                    <a href="https://x.com/TradeXfbs?t=4dRdxHObZMZOnFpCdmNuTQ&s=09"
+                        class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300"
+                        target="_blank">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-blue-300">
+                <div class="space-y-3 text-sm">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-phone text-blue-200 text-xs"></i>
+                        <span class="text-blue-200">+201221523127</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-envelope text-blue-200 text-xs"></i>
+                        <span class="text-blue-200">info@tradexeg.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <div class="mb-8">
+                        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">CBM CALCULATOR</h1>
+                        <p class="text-xl text-gray-600">Calculate the volume of your goods for shipping</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">CALCULATE THE AREA OF YOUR GOODS</h2>
+                        <div class="flex justify-center">
+                            <div class="w-64 h-48 rounded-lg overflow-hidden">
+                                <img src="Images/Contaner.png" alt="Shipping Container"
+                                    class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-6">
+                        <h3 class="text-xl font-bold text-blue-800 mb-3">What is CBM?</h3>
+                        <p class="text-gray-700 mb-3">
+                            CBM stands for "Cubic Meter" and is the unit of measurement for the volume of your shipment.
+                            It helps determine shipping costs and container space requirements.
+                        </p>
+                        <p class="text-gray-700">
+                            <strong>Cubic Feet (ft³)</strong> is another common measurement used in shipping, especially
+                            in countries using the imperial system.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Calculate Your CBM</h2>
+                    <div class="mb-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <label class="block text-gray-700 font-medium">
+                                Measurement Units
+                            </label>
+                            <div class="flex space-x-2">
+                                <button type="button" id="cmBtn"
+                                    class="px-4 py-2 bg-blue-600 text-white rounded-lg font-medium">
+                                    Centimeters (cm)
+                                </button>
+                                <button type="button" id="inchesBtn"
+                                    class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg font-medium">
+                                    Inches (in)
+                                </button>
+                                <button type="button" id="feetBtn"
+                                    class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg font-medium">
+                                    Feet (ft)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="cbmCalculator" class="space-y-6">
+                        <div>
+                            <label for="length" class="block text-gray-700 font-medium mb-2">
+                                Length:
+                            </label>
+                            <input type="number" id="length" step="0.01"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300"
+                                placeholder="Enter length in centimeters" min="0.01" required>
+                        </div>
+                        <div>
+                            <label for="width" class="block text-gray-700 font-medium mb-2">
+                                Width:
+                            </label>
+                            <input type="number" id="width" step="0.01"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300"
+                                placeholder="Enter width in centimeters" min="0.01" required>
+                        </div>
+                        <div>
+                            <label for="height" class="block text-gray-700 font-medium mb-2">
+                                Height:
+                            </label>
+                            <input type="number" id="height" step="0.01"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300"
+                                placeholder="Enter height in centimeters" min="0.01" required>
+                        </div>
+                        <div>
+                            <label for="cartons" class="block text-gray-700 font-medium mb-2">
+                                Number of Cartons:
+                            </label>
+                            <input type="number" id="cartons"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300"
+                                placeholder="Enter number of cartons" min="1" required>
+                        </div>
+                        <button type="button" id="calculateBtn"
+                            class="w-full custom-blue hover:bg-customBlue text-white font-semibold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                            <i class="fas fa-calculator mr-2"></i>
+                            Calculate Volume
+                        </button>
+                        <div id="result"
+                            class="hidden mt-6 p-6 bg-green-50 border border-green-200 rounded-lg shadow-md">
+                            <h3 class="text-xl font-bold text-green-800 mb-4 flex items-center">
+                                <i class="fas fa-chart-bar mr-2"></i>
+                                Shipping Volume Results
+                            </h3>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="bg-white p-5 rounded-lg border border-green-200 shadow-sm">
+                                    <div class="flex items-center mb-3">
+                                        <i class="fas fa-cube text-green-600 text-xl mr-2"></i>
+                                        <span class="text-lg font-bold text-gray-800">Cubic Meters (m³)</span>
+                                    </div>
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="text-gray-700">Total Volume:</span>
+                                        <span id="totalCbm" class="text-3xl font-bold text-green-700">0.00</span>
+                                    </div>
+                                    <p class="text-sm text-gray-500 mt-2">Standard international shipping measurement
+                                    </p>
+                                </div>
+                                <div class="bg-white p-5 rounded-lg border border-blue-200 shadow-sm">
+                                    <div class="flex items-center mb-3">
+                                        <i class="fas fa-cube text-blue-600 text-xl mr-2"></i>
+                                        <span class="text-lg font-bold text-gray-800">Cubic Feet (ft³)</span>
+                                    </div>
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="text-gray-700">Total Volume:</span>
+                                        <span id="totalCubicFeet" class="text-3xl font-bold text-blue-700">0.00</span>
+                                    </div>
+                                    <p class="text-sm text-gray-500 mt-2">Imperial system measurement</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-6 pt-4 border-t border-gray-200">
+                                <p class="text-sm text-gray-600">
+                                    <i class="fas fa-exchange-alt text-blue-500 mr-2"></i>
+                                    <strong>Conversion Rate:</strong> 1 m³ = 35.3147 ft³
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="mt-8 bg-gray-50 p-6 rounded-lg border border-gray-200">
+                        <h3 class="text-lg font-bold text-gray-800 mb-3 flex items-center">
+                            <i class="fas fa-calculator mr-2"></i>
+                            How to calculate CBM:
+                        </h3>
+                        <div class="space-y-2 text-gray-600">
+                            <p><strong>For Cubic Meters:</strong> (Length × Width × Height) ÷ 1,000,000 × Number of
+                                Cartons</p>
+                            <p><strong>For Cubic Feet:</strong> (Length × Width × Height) ÷ 1,728 × Number of Cartons
+                            </p>
+                            <p class="text-sm mt-3">
+                                <i class="fas fa-info-circle text-blue-500 mr-1"></i>
+                                Note: Length, Width, and Height must be in the same units for accurate calculation.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-8 bg-blue-50 p-6 rounded-lg border border-blue-100">
+                        <h3 class="text-lg font-bold text-blue-800 mb-4 flex items-center">
+                            <i class="fas fa-exchange-alt mr-2"></i>
+                            Measurement Conversions
+                        </h3>
+
+                        <div class="space-y-4">
+                            <div
+                                class="flex justify-between items-center p-4 bg-white rounded-lg border border-blue-100 shadow-sm">
+                                <div class="flex items-center">
+                                    <i class="fas fa-arrow-right text-blue-500 mr-3"></i>
+                                    <span class="text-gray-700 font-medium">1 Cubic Meter (m³)</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="text-gray-400 mx-3">=</span>
+                                    <span class="font-bold text-blue-600">35.3147 Cubic Feet (ft³)</span>
+                                </div>
+                            </div>
+                            <div
+                                class="flex justify-between items-center p-4 bg-white rounded-lg border border-blue-100 shadow-sm">
+                                <div class="flex items-center">
+                                    <i class="fas fa-arrow-left text-blue-500 mr-3"></i>
+                                    <span class="text-gray-700 font-medium">1 Cubic Foot (ft³)</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="text-gray-400 mx-3">=</span>
+                                    <span class="font-bold text-blue-600">0.0283 Cubic Meters (m³)</span>
+                                </div>
+                            </div>
+                            <div
+                                class="flex justify-between items-center p-4 bg-white rounded-lg border border-blue-100 shadow-sm">
+                                <div class="flex items-center">
+                                    <i class="fas fa-ruler text-blue-500 mr-3"></i>
+                                    <span class="text-gray-700 font-medium">1 Centimeter (cm)</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="text-gray-400 mx-3">=</span>
+                                    <span class="font-bold text-blue-600">0.3937 Inches (in)</span>
+                                </div>
+                            </div>
+                            <div
+                                class="flex justify-between items-center p-4 bg-white rounded-lg border border-blue-100 shadow-sm">
+                                <div class="flex items-center">
+                                    <i class="fas fa-ruler-vertical text-blue-500 mr-3"></i>
+                                    <span class="text-gray-700 font-medium">1 Foot (ft)</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <span class="text-gray-400 mx-3">=</span>
+                                    <span class="font-bold text-blue-600">30.48 Centimeters (cm)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-6 p-4 bg-blue-100 rounded-lg">
+                            <p class="text-sm text-blue-800">
+                                <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
+                                <strong>Tip:</strong> Most international shipping uses cubic meters, while domestic
+                                shipping in countries like the USA uses cubic feet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-800 text-white pt-12 pb-8 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <img src="Images/Logo.png" alt="Logo" class="h-10 w-auto mb-6">
+                    <p class="text-gray-300 mb-6">
+                        Your trusted partner for transport, import, export, and customs services with seamless border
+                        solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/search/top?q=trade%20x%20for%20business%20solution&locale=ar_AR"
+                            class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tradexforbusinesssolution"
+                            class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-pink-600 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/trade-x-for-business-solutions/"
+                            class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-700 transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://x.com/TradeXfbs?t=4dRdxHObZMZOnFpCdmNuTQ&s=09"
+                            class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-black transition duration-300">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition duration-300">Home</a>
+                        </li>
+                        <li><a href="CBMCalculator.html" class="text-white font-semibold transition duration-300">CBM
+                                Calculator</a></li>
+                        <li><a href="https://www.track-trace.com/"
+                                class="text-gray-300 hover:text-white transition duration-300">Tracking</a></li>
+                        <li><a href="index.html#contact-section"
+                                class="text-gray-300 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Our Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="Trade.html"
+                                class="text-gray-300 hover:text-white transition duration-300">Transport</a></li>
+                        <li><a href="import.html"
+                                class="text-gray-300 hover:text-white transition duration-300">Import</a></li>
+                        <li><a href="Export.html"
+                                class="text-gray-300 hover:text-white transition duration-300">Export</a></li>
+                        <li><a href="Shipping.html"
+                                class="text-gray-300 hover:text-white transition duration-300">Shipping</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Us</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-map-marker-alt text-blue-400"></i>
+                            <span class="text-gray-300">20 Al fath street fourth district block 19016 Al obour,
+                                Qalyubia, Egypt</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-blue-400"></i>
+                            <span class="text-gray-300">+201221523127</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-blue-400"></i>
+                            <span class="text-gray-300">info@tradexeg.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2025 TRADE & GOLDEN EAGLE. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/CBMCalculator.js"></script>
+</body>
+</html>
