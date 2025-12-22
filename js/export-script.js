@@ -69,11 +69,11 @@ const productsData = {
         },
         {
             "id": 2,
-            "image": "Images/ForProducts/Plats/plats.png",
+            "image": "Images/ForProducts/Plats/Plats.png",
             "gallery": [
-                "Images/ForProducts/Plats/plats1.jpg",
-                "Images/ForProducts/Plats/plats2.jpg",
-                "Images/ForProducts/Plats/plats3.jpg"
+                "Images/ForProducts/Plats/Plats1.jpg",
+                "Images/ForProducts/Plats/Plats2.jpg",
+                "Images/ForProducts/Plats/Plats3.jpg"
             ],
             "name": "Plats",
             "category": "Restaurant",
@@ -182,11 +182,11 @@ const productsData = {
         },
         {
             "id": 10,
-           "image": "Images/ForProducts/pizza_box/pizza_box.jpg",
+           "image": "Images/ForProducts/Pizza_box/Pizza_box.jpg",
             "gallery": [
-                "Images/ForProducts/pizza_box/pizza_box3.jpg",
-                "Images/ForProducts/pizza_box/pizza_box1.jpg",
-                "Images/ForProducts/pizza_box/pizza_box2.jpg"
+                "Images/ForProducts/Pizza_box/Pizza_box3.jpg",
+                "Images/ForProducts/Pizza_box/Pizza_box1.jpg",
+                "Images/ForProducts/Pizza_box/Pizza_box2.jpg"
             ],
             "name": "Pizza box",
             "category": "Pizza Box",
@@ -196,11 +196,11 @@ const productsData = {
         },
         {
             "id": 11,
-           "image": "Images/ForProducts/pizza_box_Print/pizza_box_print.jpg",
+           "image": "Images/ForProducts/Pizza_box_print/Pizza_box_print.jpg",
             "gallery": [
-                "Images/ForProducts/pizza_box_Print/pizza_box_print3.jpg",
-                "Images/ForProducts/pizza_box_Print/pizza_box_print1.jpg",
-                "Images/ForProducts/pizza_box_Print/pizza_box_print2.jpg"
+                "Images/ForProducts/Pizza_box_print/Pizza_box_print3.jpg",
+                "Images/ForProducts/Pizza_box_print/Pizza_box_print1.jpg",
+                "Images/ForProducts/Pizza_box_print/Pizza_box_print2.jpg"
             ],
             "name": "Pizza box print",
             "category": "Pizza Box",
@@ -224,11 +224,11 @@ const productsData = {
         },
         {
             "id": 13,
-           "image": "Images/ForProducts/plates/plates.jpg",
+           "image": "Images/ForProducts/Plates/Plates.jpg",
             "gallery": [
-                "Images/ForProducts/plates/plates1.jpg",
-                "Images/ForProducts/plates/plates2.jpg",
-                "Images/ForProducts/plates/plates.jpg"
+                "Images/ForProducts/Plates/Plates1.jpg",
+                "Images/ForProducts/Plates/Plates2.jpg",
+                "Images/ForProducts/Plates/Plates.jpg"
             ],
             "name": "Covered plates",
             "category": "Restaurant",
