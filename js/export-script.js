@@ -225,12 +225,12 @@ const productsData = {
             "rating": 4.8
         },
         {
-           "id": 9,
-           "image": "Images/ForProducts/Platss/plats.png",
+           "id": 13,
+           "image": "Images/ForProducts/New_Plates/plates.jpg",
             "gallery": [
-                "Images/ForProducts/Platss/plats1.jpg",
-                "Images/ForProducts/Platss/plats2.jpg",
-                "Images/ForProducts/Platss/plats3.jpg"
+                "Images/ForProducts/New_Plates/plates.jpg",
+                "Images/ForProducts/New_Plates/plates1.jpg",
+                "Images/ForProducts/New_Plates/plates2.jpg"
             ],
             "name": "Covered plates",
             "category": "Restaurant",
