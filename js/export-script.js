@@ -69,11 +69,11 @@ const productsData = {
         },
         {
             "id": 2,
-              "image": "Images/ForProducts/Platss/plats.png",
+              "image": "Images/ForProducts/Plats/Plats.png",
             "gallery": [
-                "Images/ForProducts/Platss/plats1.jpg",
-                "Images/ForProducts/Platss/plats2.jpg",
-                "Images/ForProducts/Platss/plats3.jpg"
+                "Images/ForProducts/Plats/Plats1.jpg",
+                "Images/ForProducts/Plats/Plats2.jpg",
+                "Images/ForProducts/Plats/Plats3.jpg"
             ],
             "name": " Plats",
             "category": "Restaurant",
@@ -200,9 +200,9 @@ const productsData = {
             "id": 11,
            "image": "Images/ForProducts/Pizza_box_print/Pizza_box_print.jpg",
             "gallery": [
-                "Images/ForProducts/Pizza_box_print/Pizza_box_print1.jpg",
-                "Images/ForProducts/Pizza_box_print/Pizza_box_print2.jpg",
-                "Images/ForProducts/Pizza_box_print/Pizza_box_print3.jpg"
+                "Images/ForProducts/Pizza_box_print/Pizza_box_print.jpg1",
+                "Images/ForProducts/Pizza_box_print/Pizza_box_print.jpg2",
+                "Images/ForProducts/Pizza_box_print/Pizza_box_print.jpg3"
             ],
             "name": "Pizza box print",
             "category": "Pizza box",
@@ -225,12 +225,12 @@ const productsData = {
             "rating": 4.8
         },
         {
-           "id": 13,
-           "image": "Images/ForProducts/Plates/Plates.jpg",
+           "id": 9,
+           "image": "Images/ForProducts/Platss/plats.png",
             "gallery": [
-                "Images/ForProducts/Plates/Plates.jpg",
-                "Images/ForProducts/Plates/Plates1.jpg",
-                "Images/ForProducts/Plates/Plates2.jpg"
+                "Images/ForProducts/Platss/plats1.jpg",
+                "Images/ForProducts/Platss/plats2.jpg",
+                "Images/ForProducts/Platss/plats3.jpg"
             ],
             "name": "Covered plates",
             "category": "Restaurant",
