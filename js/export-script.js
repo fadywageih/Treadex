@@ -69,11 +69,11 @@ const productsData = {
         },
         {
             "id": 2,
-              "image": "Images/ForProducts/Plats/Plats.png",
+              "image": "Images/ForProducts/Platss/plats.png",
             "gallery": [
-                "Images/ForProducts/Plats/Plats1.jpg",
-                "Images/ForProducts/Plats/Plats2.jpg",
-                "Images/ForProducts/Plats/Plats3.jpg"
+                "Images/ForProducts/Platss/plats1.jpg",
+                "Images/ForProducts/Plats/plats2.jpg",
+                "Images/ForProducts/Plats/plats3.jpg"
             ],
             "name": " Plats",
             "category": "Restaurant",
