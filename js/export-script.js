@@ -65,21 +65,21 @@ const productsData = {
             "category": "Garbage bags",
             "description": "High-quality white garbage bags suitable for all purposes. ",
             "discount": 15,
-            "rating": 4.8
+            "rating": 4.8 
         },
         {
             "id": 2,
-            "image": "Images/ForProducts/Plats/Plats.png",
+              "image": "Images/ForProducts/Plats/Plats.png",
             "gallery": [
                 "Images/ForProducts/Plats/Plats1.jpg",
                 "Images/ForProducts/Plats/Plats2.jpg",
                 "Images/ForProducts/Plats/Plats3.jpg"
             ],
-            "name": "Plats",
+            "name": " Plats",
             "category": "Restaurant",
             "description": "Strong and eco-friendly paper plates, perfect for parties, catering, and food service applications.",
             "discount": 10,
-            "rating": 4.6
+            "rating": 4.8
         },
         {
             "id": 3,
@@ -177,19 +177,21 @@ const productsData = {
             "name": "Paper Bags",
             "category": "Paper Bags",
             "description": "Eco-friendly paper bags designed for strength, style, and sustainability. Perfect for retail, food service, and takeaway packaging",
+                        "description": "Strong white plastic covers ideal for food packaging, ensuring hygiene and protection.",
+
             "discount": 12,
             "rating": 4.8
         },
         {
-            "id": 10,
+           "id": 10,
            "image": "Images/ForProducts/Pizza_box/Pizza_box.jpg",
             "gallery": [
-                "Images/ForProducts/Pizza_box/Pizza_box3.jpg",
                 "Images/ForProducts/Pizza_box/Pizza_box1.jpg",
-                "Images/ForProducts/Pizza_box/Pizza_box2.jpg"
+                "Images/ForProducts/Pizza_box/Pizza_box2.jpg",
+                "Images/ForProducts/Pizza_box/Pizza_box3.jpg"
             ],
-            "name": "Pizza box",
-            "category": "Pizza Box",
+            "name": "Pizza box ",
+            "category": "Pizza box",
             "description": "High-quality kraft pizza boxes made to keep your pizza hot, fresh, and delicious. Strong, grease-resistant, and eco-conscious.",
             "discount": 12,
             "rating": 4.8
@@ -198,15 +200,15 @@ const productsData = {
             "id": 11,
            "image": "Images/ForProducts/Pizza_box_print/Pizza_box_print.jpg",
             "gallery": [
-                "Images/ForProducts/Pizza_box_print/Pizza_box_print3.jpg",
-                "Images/ForProducts/Pizza_box_print/Pizza_box_print1.jpg",
-                "Images/ForProducts/Pizza_box_print/Pizza_box_print2.jpg"
+                "Images/ForProducts/Pizza_box_print/Pizza_box_print.jpg1",
+                "Images/ForProducts/Pizza_box_print/Pizza_box_print.jpg2",
+                "Images/ForProducts/Pizza_box_print/Pizza_box_print.jpg3"
             ],
             "name": "Pizza box print",
-            "category": "Pizza Box",
+            "category": "Pizza box",
             "description": "Custom printed pizza boxes that showcase your brand while delivering durability and freshness with every slice.",
-            "discount": 12,
-            "rating": 4.8
+            "discount": 10,
+            "rating": 4.7
         },
          {
             "id": 12,
@@ -223,12 +225,12 @@ const productsData = {
             "rating": 4.8
         },
         {
-            "id": 13,
+           "id": 13,
            "image": "Images/ForProducts/Plates/Plates.jpg",
             "gallery": [
+                "Images/ForProducts/Plates/Plates.jpg",
                 "Images/ForProducts/Plates/Plates1.jpg",
-                "Images/ForProducts/Plates/Plates2.jpg",
-                "Images/ForProducts/Plates/Plates.jpg"
+                "Images/ForProducts/Plates/Plates2.jpg"
             ],
             "name": "Covered plates",
             "category": "Restaurant",
