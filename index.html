@@ -24,6 +24,7 @@
         }
     </script>
 </head>
+
 <body class="bg-gray-50">
     <div class="fixed top-0 left-0 right-0 z-[9999]" id="exportBanner">
         <div class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-3 px-4 animate-slideDown">
@@ -204,7 +205,7 @@
         <div class="relative hero-section overflow-hidden">
             <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100" id="slide1">
                 <div class="absolute inset-0 bg-black opacity-40"></div>
-                <img src="Images/Cover.jpg" alt="Global Trade" class="w-full h-full object-cover">
+                <img src="Images/Cover.png" alt="Global Trade" class="w-full h-full object-cover">
                 <div class="absolute inset-0 flex items-center">
                     <div class="container mx-auto px-4 text-white mb-40">
                         <h2 class="text-4xl md:text-5xl font-bold mb-4">WHERE BORDERS MEET OPPORTUNITIES</h2>
@@ -230,10 +231,19 @@
                     </div>
                 </div>
             </div>
+            <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0" id="slide2">
+                <div class="absolute inset-0 bg-black opacity-40"></div>
+                <img src="Images/Cover2.png" alt="Shipping Logistics" class="w-full h-full object-cover">
+                <div class="absolute inset-0 flex items-center">
+
+                </div>
+            </div>
         </div>
         <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
             <button class="w-3 h-3 rounded-full bg-white opacity-100 slider-dot" data-slide="0"></button>
             <button class="w-3 h-3 rounded-full bg-white opacity-50 slider-dot" data-slide="1"></button>
+            <button class="w-3 h-3 rounded-full bg-white opacity-50 slider-dot" data-slide="2"></button>
+
         </div>
     </section>
     <section class="bg-header py-6">
@@ -312,7 +322,7 @@
                                 class="product-image">
                         </div>
                         <div class="product-image-container">
-                            <img src="Images/ForProducts/Diapers/Diapers.jpg.png" alt="Organic Cotton Textiles"
+                            <img src="Images/ForProducts/Diapers/Diapers.jpg" alt="Organic Cotton Textiles"
                                 class="product-image">
                         </div>
                         <div class="product-image-container">
@@ -327,7 +337,11 @@
                                 class="product-image">
                         </div>
                         <div class="product-image-container">
-                            <img src="Images/ForProducts/Coffee_Cup/Coffee_Cup1.jpg" alt="Cotton Fabric"
+                            <img src="Images/ForProducts/Sauce_cups/Sauce_cups1.jpg" alt="Cotton Fabric"
+                                class="product-image">
+                        </div>
+                        <div class="product-image-container">
+                            <img src="Images/ForProducts/Bed_Sheets/Bed_Sheets.jpg" alt="Cotton Fabric"
                                 class="product-image">
                         </div>
                     </div>
@@ -491,67 +505,69 @@
             </div>
         </div>
     </section>
-<section id="contact-section" class="py-20 bg-white">
-    <div class="container mx-auto px-4">
-        <div class="flex flex-col items-center justify-center">
-            <div class="w-full max-w-3xl text-center">
-                <h2 class="text-4xl font-bold text-gray-800 mb-6">Contact Us</h2>
-                <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
-                    Get in touch with our team for any inquiries about our transport, import, export, and customs services.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow">
-                        <div class="flex items-center space-x-4 mb-4">
-                            <div class="bg-blue-100 p-3 rounded-full">
-                                <i class="fas fa-envelope text-blue-600"></i>
-                            </div>
-                            <div class="text-left">
-                                <h3 class="font-semibold text-gray-800">Email</h3>
-                                <p class="text-gray-600">info@tradexeg.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow">
-                        <div class="flex items-center space-x-4 mb-4">
-                            <div class="bg-blue-100 p-3 rounded-full">
-                                <i class="fas fa-phone text-blue-600"></i>
-                            </div>
-                            <div class="text-left">
-                                <h3 class="font-semibold text-gray-800">Phone</h3>
-                                <p class="text-gray-600">+201221523127</p>
-                                <p class="text-gray-600">+201000907370</p>
+    <section id="contact-section" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col items-center justify-center">
+                <div class="w-full max-w-3xl text-center">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">Contact Us</h2>
+                    <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+                        Get in touch with our team for any inquiries about our transport, import, export, and customs
+                        services.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow">
+                            <div class="flex items-center space-x-4 mb-4">
+                                <div class="bg-blue-100 p-3 rounded-full">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <div class="text-left">
+                                    <h3 class="font-semibold text-gray-800">Email</h3>
+                                    <p class="text-gray-600">info@tradexeg.com</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow">
-                        <div class="flex items-center space-x-4 mb-4">
-                            <div class="bg-blue-100 p-3 rounded-full">
-                                <i class="fas fa-map-marker-alt text-blue-600"></i>
-                            </div>
-                            <div class="text-left">
-                                <h3 class="font-semibold text-gray-800">Address</h3>
-                                <p class="text-gray-600 text-sm">20 Al fath street fourth district block 19016 Al obour, Qalyubia, Egypt</p>
+                        <div class="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow">
+                            <div class="flex items-center space-x-4 mb-4">
+                                <div class="bg-blue-100 p-3 rounded-full">
+                                    <i class="fas fa-phone text-blue-600"></i>
+                                </div>
+                                <div class="text-left">
+                                    <h3 class="font-semibold text-gray-800">Phone</h3>
+                                    <p class="text-gray-600">+201221523127</p>
+                                    <p class="text-gray-600">+201000907370</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow">
-                        <div class="flex items-center space-x-4 mb-4">
-                            <div class="bg-blue-100 p-3 rounded-full">
-                                <i class="fas fa-clock text-blue-600"></i>
+                        <div class="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow">
+                            <div class="flex items-center space-x-4 mb-4">
+                                <div class="bg-blue-100 p-3 rounded-full">
+                                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                </div>
+                                <div class="text-left">
+                                    <h3 class="font-semibold text-gray-800">Address</h3>
+                                    <p class="text-gray-600 text-sm">20 Al fath street fourth district block 19016 Al
+                                        obour, Qalyubia, Egypt</p>
+                                </div>
                             </div>
-                            <div class="text-left">
-                                <h3 class="font-semibold text-gray-800">Opening Hours</h3>
-                                <p class="text-gray-600 text-sm">Sat-Wed: 9:00 - 18:00</p>
-                                <p class="text-gray-600 text-sm">Thu: 9:00 - 16:00</p>
-                                <p class="text-gray-600 text-sm">Fri: Closed</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-xl hover:shadow-md transition-shadow">
+                            <div class="flex items-center space-x-4 mb-4">
+                                <div class="bg-blue-100 p-3 rounded-full">
+                                    <i class="fas fa-clock text-blue-600"></i>
+                                </div>
+                                <div class="text-left">
+                                    <h3 class="font-semibold text-gray-800">Opening Hours</h3>
+                                    <p class="text-gray-600 text-sm">Sat-Wed: 9:00 - 18:00</p>
+                                    <p class="text-gray-600 text-sm">Thu: 9:00 - 16:00</p>
+                                    <p class="text-gray-600 text-sm">Fri: Closed</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
     <section class="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center">
@@ -680,7 +696,7 @@
                             <i class="fas fa-envelope text-blue-400"></i>
                             <span class="text-gray-300">info@tradexeg.com</span>
                         </div>
-                                                <div class="flex items-center space-x-3">
+                        <div class="flex items-center space-x-3">
                             <i class="fas fa- text-blue-400">Vat</i>
                             <span class="text-gray-300">504612425</span>
                         </div>
@@ -696,4 +712,5 @@
     </footer>
     <script src="js/index.js"></script>
 </body>
+
 </html>
