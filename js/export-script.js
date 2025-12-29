@@ -61,12 +61,12 @@ const productsData = {
                "Images/ForProducts/Garbage_Bag/Garbage_Bag_white2.jpg",
                 "Images/ForProducts/Garbage_Bag/Garbage_Bag_white3.jpg"
             ],
-            "name": "Garbage Bag white",
+            "name": "clear Garbage Bag ",
             "category": "Garbage bags",
-            "description": "Kitchen small trash can, 24in X 27in , 1000 bags, 8 micron, clear. ",
-            "discount":10,
-            "rating": 4.4 ,
-            "basePrice": 10.00
+            "description": "Kitchen small trash can, (24inX27in)  1000 bags 8 micron clear.",
+            "discount": 11,
+            "rating": 4.8,
+            "basePrice":0.60
         },
         {
             "id": 2,
@@ -80,7 +80,8 @@ const productsData = {
             "category": "Restaurant",
             "description": "Kraft plats 320 GSM with plastic lids pet. Material: Made of high quality thickened food grade paper material,safe and reliable use,better choice compared to plastic and foam trays.",
             "discount": 11,
-            "rating": 4.8
+            "rating": 4.8,
+            "basePrice":0.14
         },
         {
             "id": 3,
@@ -183,8 +184,8 @@ const productsData = {
             ],
             "name": "Paper Bags",
             "category": "Paper Bags",
-            "description": "kraft Paper Bag 70GSM, 500 bags in carton, 100% recycle.",
-
+            "description": "kraft Paper Bag 70GSM, 500 bags in carton, 100% recycle, (13x8.5x27.5) price 8$, (9x6x17.5) price 5$ ,(18×11.5×35) price 14.80$, (11×6×20) price 5.80$.",
+            "basePrice":8,
             "discount": 16,
             "rating": 4.8
         },
@@ -213,9 +214,10 @@ const productsData = {
             ],
             "name": "Pizza box print",
             "category": "Pizza box",
-            "description": "High quality white pizza box, print one color, 50 box in the packet.",
+            "description": "High quality white pizza box, print one color, 50 box in the packet,size (30X30) price 7.105$ ,(40x40) price 9.473$",
             "discount": 11,
-            "rating": 4.7
+            "rating": 4.7,
+            "basePrice": 7.105
         },
          {
             "id": 12,
@@ -259,7 +261,8 @@ const productsData = {
             "category": "Restaurant",
             "description": "Kraft plats 320 GSM with plastic lids pet. Material: Made of high quality thickened food grade paper material,safe and reliable use,better choice compared to plastic and foam trays.",
             "discount": 15,
-            "rating": 4.5
+            "rating": 4.5,
+               "basePrice":0.19
         },
         {
             "id": 15,
@@ -314,9 +317,10 @@ const productsData = {
             ],
             "name": "Garbage Bag",
             "category": "Garbage Bag",
-            "description": "High quality 55 Gallon Trash Bags Heavy Duty | 100 Count | 50 Gallon | Large Black Garbage Bags.",
+            "description": "Kitchen small trash can, (24inX27in)  1000 bags 8 micron clear, price roll 0.60$ ,(55 gallon) 100 in carton 1.25 mil price 14$, (45 gallon) 100 in catron 1.25 mil price 12$,(33 gallon) 250 in carton 1.25 mil price 21$, (60 gallon) 100 in carton 1.25 mil price 17.5$.",
             "discount": 10,
-            "rating": 4.8
+            "rating": 4.8,
+               "basePrice":0.60
         },
          {
             "id": 19,
