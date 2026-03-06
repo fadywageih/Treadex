@@ -54,22 +54,23 @@ if (mobileServicesButton) {
 const productsData = {
     "products": [
         {
-           "id": 1,
-              "image": "Images/ForProducts/Garbage_Bag/Garbage_Bag_white.png",
+            "id": 1,
+            "image": "Images/ForProducts/Garbage_Bag/Garbage_Bag_white.png",
             "gallery": [
                 "Images/ForProducts/Garbage_Bag/Garbage_Bag_white1.jpg",
-               "Images/ForProducts/Garbage_Bag/Garbage_Bag_white2.jpg",
+                "Images/ForProducts/Garbage_Bag/Garbage_Bag_white2.jpg",
                 "Images/ForProducts/Garbage_Bag/Garbage_Bag_white3.jpg"
             ],
-            "name": "Garbage Bag white",
+            "name": "clear Garbage Bag ",
             "category": "Garbage bags",
-            "description": "High-quality white garbage bags suitable for all purposes. ",
-            "discount": 15,
-            "rating": 4.8 
+            "description": "Kitchen small trash can, (24inX27in)  1000 bags 8 micron clear.",
+            "discount": 11,
+            "rating": 4.8,
+            "basePrice": 0.60
         },
         {
             "id": 2,
-              "image": "Images/ForProducts/Platss/plats.png",
+            "image": "Images/ForProducts/Platss/plats.png",
             "gallery": [
                 "Images/ForProducts/Platss/plats1.jpg",
                 "Images/ForProducts/Platss/plats2.jpg",
@@ -77,13 +78,14 @@ const productsData = {
             ],
             "name": " Plats",
             "category": "Restaurant",
-            "description": "Strong and eco-friendly paper plates, perfect for parties, catering, and food service applications.",
-            "discount": 10,
-            "rating": 4.8
+            "description": "Kraft plats 320 GSM with plastic lids pet. Material: Made of high quality thickened food grade paper material,safe and reliable use,better choice compared to plastic and foam trays.",
+            "discount": 11,
+            "rating": 4.8,
+            "basePrice": 0.14
         },
         {
             "id": 3,
-             "image": "Images/ForProducts/P_O_S_ROOL/P.O.S_ROOL1.jpg",
+            "image": "Images/ForProducts/P_O_S_ROOL/P.O.S_ROOL1.jpg",
             "gallery": [
                 "Images/ForProducts/P_O_S_ROOL/P.O.S_ROOL1.jpg",
                 "Images/ForProducts/P_O_S_ROOL/P.O.S_ROOL2.jpg",
@@ -91,13 +93,14 @@ const productsData = {
             ],
             "name": "P.O.S ROOL",
             "category": "Restaurant",
-            "description": "High-quality POS rolls ensuring clear, smooth, and reliable printing for daily business transactions.",
+            "description": "High quality thermal paper 50 GSM, 2.25in ,15 meters 100 roll in box..",
             "discount": 20,
-            "rating": 4.9
+            "rating": 4.9,
+            "basePrice": 8.842
         },
         {
             "id": 4,
-             "image": "Images/ForProducts/Thermal_Roll/Thermal_Roll1.jpg",
+            "image": "Images/ForProducts/Thermal_Roll/Thermal_Roll1.jpg",
             "gallery": [
                 "Images/ForProducts/Thermal_Roll/Thermal_Roll1.jpg",
                 "Images/ForProducts/Thermal_Roll/Thermal_Roll2.jpg",
@@ -105,42 +108,44 @@ const productsData = {
             ],
             "name": "Thermal Roll",
             "category": "Restaurant",
-            "description": "Premium thermal rolls with sharp print quality and long-lasting performance for receipts and billing systems.",
-            "discount": 5,
+            "description": "High quality thermal paper 50 GSM, 3 1/8in ,230ft, 50 rolls in box..",
+            "discount": 9,
             "rating": 4.7
         },
-        {
-            "id": 5,
-             "image": "Images/ForProducts/fine/fine1.png",
-            "gallery": [
-                "Images/ForProducts/fine/fine1.png",
-                "Images/ForProducts/fine/fine2.jpg",
-                "Images/ForProducts/fine/fine3.jpg"
-            ],
-            "name": "Toilet Tissue",
-            "category": "Tissue",
-            "description": " Soft and strong toilet tissue providing comfort, hygiene, and reliable performance.",
-            "discount": 25,
-            "rating": 4.5
-        },
-        {
-            "id": 6,
-            "image": "Images/ForProducts/Facial_Tissue/Facial_Tissue1.jpg",
+        // {
+            // "id": 5,
+            // "image": "Images/ForProducts/fine/fine1.png",
+            // "gallery": [
+            //     "Images/ForProducts/fine/fine1.png",
+            //     "Images/ForProducts/fine/fine2.jpg",
+            //     "Images/ForProducts/fine/fine3.jpg"
+            // ],
+            // "name": "Toilet Tissue",
+            // "category": "Tissue",
+            // "description": "High quality toilet tissue pulp pure, 2 ply, 32 GSM, 470 sheets, 48 rolls in packet.",
+            // "discount": 12,
+            // "rating": 4.5,
+            // "basePrice": 8.5
+        // },
+        // {
+            // "id": 6,
+            // "image": "Images/ForProducts/Facial_Tissue/Facial_Tissue1.jpg",
 
-            "gallery": [
-                "Images/ForProducts/Facial_Tissue/Facial_Tissue1.jpg",
-                "Images/ForProducts/Facial_Tissue/Facial_Tissue2.png",
-                "Images/ForProducts/Facial_Tissue/Facial_Tissue3.jpg"
-            ],
-            "name": "Facial Tissue",
-            "category": "Tissue",
-            "description": "Ultra-soft facial tissues designed for gentle care and everyday use.",
-            "discount": 12,
-            "rating": 4.8
-        },
+            // "gallery": [
+            //     "Images/ForProducts/Facial_Tissue/Facial_Tissue1.jpg",
+            //     "Images/ForProducts/Facial_Tissue/Facial_Tissue2.png",
+            //     "Images/ForProducts/Facial_Tissue/Facial_Tissue3.jpg"
+            // ],
+            // "name": "Facial Tissue",
+            // "category": "Tissue",
+            // "description": "High quality facial tissue pulp pure, 2 ply, 32 GSM, 100 sheets in the box, 66 boxes in carton..",
+            // "discount": 11,
+            // "rating": 4.8,
+            // "basePrice": 14.5
+        // },
         {
             "id": 7,
-           "image": "Images/ForProducts/Coffee_Cup/Coffee_Cup.jpg",
+            "image": "Images/ForProducts/Coffee_Cup/Coffee_Cup.jpg",
             "gallery": [
                 "Images/ForProducts/Coffee_Cup/Coffee_Cup1.jpg",
                 "Images/ForProducts/Coffee_Cup/Coffee_Cup2.jpg",
@@ -148,13 +153,14 @@ const productsData = {
             ],
             "name": "Coffee Cup",
             "category": "Cups",
-            "description": "Premium paper coffee cups designed to keep beverages hot and hands comfortable. Ideal for cafés, restaurants, and takeaways.",
-            "discount": 12,
-            "rating": 4.8
+            "description": "High-quality disposable coffee cups, 250 GSM material, packed 1000 cups per box (12oz),* (16oz) 250 gsm price 14.526$, (20oz) 280 gsm 26.842$",
+            "discount": 13,
+            "rating": 4.7,
+            "basePrice": 13.157
         },
         {
             "id": 8,
-           "image": "Images/ForProducts/Coffee_Cups_Sleeve/Coffee_Cups_Sleeve.jpg",
+            "image": "Images/ForProducts/Coffee_Cups_Sleeve/Coffee_Cups_Sleeve.jpg",
             "gallery": [
                 "Images/ForProducts/Coffee_Cups_Sleeve/Coffee_Cups_Sleeve1.jpg",
                 "Images/ForProducts/Coffee_Cups_Sleeve/Coffee_Cups_Sleeve2.jpg",
@@ -162,13 +168,15 @@ const productsData = {
             ],
             "name": "Coffee Cups Sleeve",
             "category": "Cups",
-            "description": "Insulated coffee cup sleeves designed to protect hands and keep drinks hot",
-            "discount": 12,
-            "rating": 4.8
+            "description": "High quality coffee cups sleeves 12oz, 16oz, 20oz materials kraft paper.",
+            "discount": 14,
+            "rating": 4.8,
+            "basePrice": 11.578
+
         },
         {
             "id": 9,
-           "image": "Images/ForProducts/Paper_Bags/Paper_Bags.jpg",
+            "image": "Images/ForProducts/Paper_Bags/Paper_Bags.jpg",
             "gallery": [
                 "Images/ForProducts/Paper_Bags/Paper_Bags.jpg",
                 "Images/ForProducts/Paper_Bags/Paper_Bags1.jpg",
@@ -176,43 +184,44 @@ const productsData = {
             ],
             "name": "Paper Bags",
             "category": "Paper Bags",
-            "description": "Eco-friendly paper bags designed for strength, style, and sustainability. Perfect for retail, food service, and takeaway packaging",
-                        "description": "Strong white plastic covers ideal for food packaging, ensuring hygiene and protection.",
-
-            "discount": 12,
+            "description": "kraft Paper Bag 70GSM, 500 bags in carton, 100% recycle, (13x8.5x27.5) price 8$, (9x6x17.5) price 5$ ,(18×11.5×35) price 14.80$, (11×6×20) price 5.80$.",
+            "basePrice": 8,
+            "discount": 16,
             "rating": 4.8
         },
         {
-           "id": 10,
-           "image": "Images/ForProducts/Pizza_box/Pizza_box.jpg",
+            "id": 10,
+            "image": "Images/ForProducts/Pizza_boxs/pizza_box.jpg",
             "gallery": [
-                "Images/ForProducts/Pizza_box/Pizza_box1.jpg",
-                "Images/ForProducts/Pizza_box/Pizza_box2.jpg",
-                "Images/ForProducts/Pizza_box/Pizza_box3.jpg"
+                "Images/ForProducts/Pizza_boxs/pizza_box1.jpg",
+                "Images/ForProducts/Pizza_boxs/pizza_box2.jpg",
+                "Images/ForProducts/Pizza_boxs/pizza_box3.jpg"
             ],
             "name": "Pizza box ",
             "category": "Pizza box",
-            "description": "High-quality kraft pizza boxes made to keep your pizza hot, fresh, and delicious. Strong, grease-resistant, and eco-conscious.",
-            "discount": 12,
-            "rating": 4.8
+            "description": "High quality Kraft pizza box, print one color, 50 box in the packet,size (30X30) price 7.105$ ,(40x40) price 9.473$.",
+            "discount": 11,
+            "rating": 4.8,
+            "basePrice": 7.105
         },
         {
             "id": 11,
-           "image": "Images/ForProducts/Pizza_box_print/Pizza_box_print.jpg",
+            "image": "Images/ForProducts/Pizza_box_prints/pizza_box_print.jpg",
             "gallery": [
-                "Images/ForProducts/Pizza_box_print/Pizza_box_print.jpg1",
-                "Images/ForProducts/Pizza_box_print/Pizza_box_print.jpg2",
-                "Images/ForProducts/Pizza_box_print/Pizza_box_print.jpg3"
+                "Images/ForProducts/Pizza_box_prints/pizza_box_print1.jpg",
+                "Images/ForProducts/Pizza_box_prints/pizza_box_print2.jpg",
+                "Images/ForProducts/Pizza_box_prints/pizza_box_print3.jpg"
             ],
             "name": "Pizza box print",
             "category": "Pizza box",
-            "description": "Custom printed pizza boxes that showcase your brand while delivering durability and freshness with every slice.",
-            "discount": 10,
-            "rating": 4.7
+            "description": "High quality white pizza box, print one color, 50 box in the packet,size (30X30) price 7.105$ ,(40x40) price 9.473$",
+            "discount": 11,
+            "rating": 4.7,
+            "basePrice": 7.105
         },
-         {
+        {
             "id": 12,
-           "image": "Images/ForProducts/Coffee_Cup_Covers/Coffee_Cup_Covers.jpg",
+            "image": "Images/ForProducts/Coffee_Cup_Covers/Coffee_Cup_Covers.jpg",
             "gallery": [
                 "Images/ForProducts/Coffee_Cup_Covers/Coffee_Cup_Covers1.jpg",
                 "Images/ForProducts/Coffee_Cup_Covers/Coffee_Cup_Covers2.jpg",
@@ -220,13 +229,14 @@ const productsData = {
             ],
             "name": "Coffee Cup Lids",
             "category": "Cups",
-            "description": "Secure and spill-resistant coffee cup lids designed for convenience and safe on-the-go drinking.",
-            "discount": 12,
-            "rating": 4.8
+            "description": "High quality Coffee Lids (12oz), Leak-Proof Plastic Coffee Lid, Heat-Resistant & strong hot cup lids for Everyday Convenience. materials plastic pet.",
+            "discount": 10,
+            "rating": 4.8,
+            "basePrice": 6.842
         },
         {
-           "id": 13,
-           "image": "Images/ForProducts/New_Plates/plates.jpg",
+            "id": 13,
+            "image": "Images/ForProducts/New_Plates/plates.jpg",
             "gallery": [
                 "Images/ForProducts/New_Plates/plates.jpg",
                 "Images/ForProducts/New_Plates/plates1.jpg",
@@ -234,13 +244,13 @@ const productsData = {
             ],
             "name": "Covered plates",
             "category": "Restaurant",
-            "description": "Strong white plastic covers ideal for food packaging, ensuring hygiene and protection.",
+            "description": "100%Compostable No Plastic Heavy Knives Disposable Forks Spoons Plastic Utensils, The Heavyweight Heavy Duty Flatware is Eco Friendly Products for Lounge Party Wedding BBQ Picnic Camping [150 Count].",
             "discount": 12,
             "rating": 4.8
         },
         {
             "id": 14,
-           "image": "Images/ForProducts/Plates_cutlery/Plates_cutlery.png",
+            "image": "Images/ForProducts/Plates_cutlery/Plates_cutlery.png",
             "gallery": [
                 "Images/ForProducts/Plates_cutlery/Plates_cutlery.png",
                 "Images/ForProducts/Plates_cutlery/Plates_cutlery1.jpg",
@@ -249,13 +259,14 @@ const productsData = {
             ],
             "name": "Plates cutlery",
             "category": "Restaurant",
-            "description": "Strong and eco-friendly paper plates, perfect for parties, catering, and food service applications.",
-            "discount": 12,
-            "rating": 4.8
+            "description": "Kraft plats 320 GSM with plastic lids pet. Material: Made of high quality thickened food grade paper material,safe and reliable use,better choice compared to plastic and foam trays.",
+            "discount": 15,
+            "rating": 4.5,
+            "basePrice": 0.19
         },
         {
             "id": 15,
-           "image": "Images/ForProducts/Diapers/Diapers.jpg",
+            "image": "Images/ForProducts/Diapers/Diapers.jpg",
             "gallery": [
                 "Images/ForProducts/Diapers/Diapers.jpg",
                 "Images/ForProducts/Diapers/Diapers1.jpg",
@@ -263,13 +274,13 @@ const productsData = {
             ],
             "name": "Diapers",
             "category": "Medical",
-            "description": "High-absorbency diapers designed for maximum comfort, dryness, and skin protection",
+            "description": "Professional quality product designed for institutional use.",
             "discount": 12,
-            "rating": 4.8
+            "rating": 4.6
         },
         {
             "id": 16,
-           "image": "Images/ForProducts/Bed_Sheets/Bed_Sheets.jpg",
+            "image": "Images/ForProducts/Bed_Sheets/Bed_Sheets.jpg",
             "gallery": [
                 "Images/ForProducts/Bed_Sheets/Bed_Sheets.jpg",
                 "Images/ForProducts/Bed_Sheets/Bed_Sheets1.jpg",
@@ -277,13 +288,13 @@ const productsData = {
             ],
             "name": "Bed Sheets",
             "category": "Medical",
-            "description": " Soft, durable bed sheets offering comfort, hygiene, and long-lasting quality",
+            "description": "Professional quality product designed for institutional use.",
             "discount": 12,
-            "rating": 4.8
+            "rating": 4.5
         },
-         {
+        {
             "id": 17,
-           "image": "Images/ForProducts/Gloves/Gloves.jpg",
+            "image": "Images/ForProducts/Gloves/Gloves.jpg",
             "gallery": [
                 "Images/ForProducts/Gloves/Gloves.jpg",
                 "Images/ForProducts/Gloves/Gloves1.jpg",
@@ -292,12 +303,13 @@ const productsData = {
             "name": "Gloves",
             "category": "Medical",
             "description": " High-quality nitrile gloves offering superior protection, durability, and comfort for medical and industrial use.",
-            "discount": 12,
-            "rating": 4.8
+            "discount": 11,
+            "rating": 4.4,
+            "basePrice": 16.50
         },
-         {
+        {
             "id": 18,
-           "image": "Images/ForProducts/Garbage_Bag_Black/Garbage_Bag.png",
+            "image": "Images/ForProducts/Garbage_Bag_Black/Garbage_Bag.png",
             "gallery": [
                 "Images/ForProducts/Garbage_Bag_Black/Garbage_Bag.png",
                 "Images/ForProducts/Garbage_Bag_Black/Garbage_Bag1.jpg",
@@ -305,13 +317,14 @@ const productsData = {
             ],
             "name": "Garbage Bag",
             "category": "Garbage Bag",
-            "description": "Strong and durable garbage bags designed for leak resistance and heavy-duty use.",
-            "discount": 12,
-            "rating": 4.8
+            "description": "Kitchen small trash can, (24inX27in)  1000 bags 8 micron clear, price roll 0.60$ ,(55 gallon) 100 in carton 1.25 mil price 14$, (45 gallon) 100 in catron 1.25 mil price 12$,(33 gallon) 250 in carton 1.25 mil price 21$, (60 gallon) 100 in carton 1.25 mil price 17.5$.",
+            "discount": 10,
+            "rating": 4.8,
+            "basePrice": 0.60
         },
-         {
+        {
             "id": 19,
-           "image": "Images/ForProducts/Mask/Mask.jpg",
+            "image": "Images/ForProducts/Mask/Mask.jpg",
             "gallery": [
                 "Images/ForProducts/Mask/Mask.jpg",
                 "Images/ForProducts/Mask/Mask1.jpg",
@@ -320,12 +333,12 @@ const productsData = {
             "name": "Mask",
             "category": "Medical",
             "description": "Protective face masks designed for comfort, breathability, and daily safety.",
-            "discount": 12,
+            "discount": 10,
             "rating": 4.8
         },
         {
             "id": 20,
-           "image": "Images/ForProducts/Sauce_cups/Sauce_cups.jpg",
+            "image": "Images/ForProducts/Sauce_cups/Sauce_cups.jpg",
             "gallery": [
                 "Images/ForProducts/Sauce_cups/Sauce_cups.jpg",
                 "Images/ForProducts/Sauce_cups/Sauce_cups1.jpg",
@@ -333,13 +346,14 @@ const productsData = {
             ],
             "name": "Sauce cups",
             "category": "Cups",
-            "description": "Durable sauce cups perfect for dips, dressings, and portion control",
-            "discount": 12,
-            "rating": 4.8
+            "description": "Disposable Sauce cups materials plastic, 1000 pieces in carton, (2oz) price$ 9.684, (4oz) price$ 11.831",
+            "discount": 11,
+            "rating": 4.8,
+            "basePrice": 9.684
         },
         {
             "id": 21,
-           "image": "Images/ForProducts/napkin/napkin.jpg",
+            "image": "Images/ForProducts/napkin/napkin.jpg",
             "gallery": [
                 "Images/ForProducts/napkin/napkin.jpg",
                 "Images/ForProducts/napkin/napkin1.png",
@@ -347,13 +361,14 @@ const productsData = {
             ],
             "name": "Napkin",
             "category": "Tissue",
-            "description": "Premium napkins combining softness, strength, and elegant presentation (brown).",
+            "description": "Brown napkin material pulp pure 2 play 32 GSM, 100 sheets in packet, 30 packets in box.",
             "discount": 12,
-            "rating": 4.8
+            "rating": 4.8,
+            "basePrice": 9
         },
-           {
+        {
             "id": 22,
-           "image": "Images/ForProducts/paper_twole/paper_twole.png",
+            "image": "Images/ForProducts/paper_twole/paper_twole.png",
             "gallery": [
                 "Images/ForProducts/paper_twole/paper_twole.png",
                 "Images/ForProducts/paper_twole/paper_twole1.png",
@@ -361,13 +376,14 @@ const productsData = {
             ],
             "name": "Paper Twole",
             "category": "Tissue",
-            "description": "Highly absorbent paper towels ideal for kitchens, cleaning, and commercial use.",
+            "description": "High quality paper towel pulp pure 16 GSM, 1000 feet, 6 rolls in box, (Bale of 1x20) Revive price/Bale 8.5$",
             "discount": 12,
-            "rating": 4.8
+            "rating": 4.9,
+            "basePrice": 7.08
         },
         {
             "id": 23,
-           "image": "Images/ForProducts/Newnapkin/napkin.png",
+            "image": "Images/ForProducts/Newnapkin/napkin.png",
             "gallery": [
                 "Images/ForProducts/Newnapkin/napkin.png",
                 "Images/ForProducts/Newnapkin/napkin1.jpg",
@@ -375,13 +391,14 @@ const productsData = {
             ],
             "name": "Napkin",
             "category": "Tissue",
-            "description": "Premium napkins combining softness, strength, and elegant presentation.",
-            "discount": 12,
-            "rating": 4.8
+            "description": "White napkin material pulp pure 1 ply 48 GSM, 100 sheets in packet, 30 packets in box.",
+            "discount": 11,
+            "rating": 4.6,
+            "basePrice": 13.1
         },
         {
             "id": 24,
-           "image": "Images/ForProducts/Cold_Cups/Cold_Cups.jpg",
+            "image": "Images/ForProducts/Cold_Cups/Cold_Cups.jpg",
             "gallery": [
                 "Images/ForProducts/Cold_Cups/Cold_Cups.jpg",
                 "Images/ForProducts/Cold_Cups/Cold_Cups1.jpg",
@@ -389,9 +406,10 @@ const productsData = {
             ],
             "name": "Cold Cups",
             "category": "Cups",
-            "description": "Durable cold cups perfect for juices, soft drinks, and iced beverages. Crystal clear, sturdy, and leak-resistant.",
+            "description": "High quality cold cups materials plastic pet, with Lids 1000 in box,(12oz) price 19.368$, (16oz) price 23.684$, (20oz) price  24.063$",
             "discount": 12,
-            "rating": 4.8
+            "rating": 4.5,
+            "basePrice": 19.368
         },
 
     ]
@@ -443,7 +461,7 @@ nextGalleryBtn.addEventListener('click', () => {
         updateGallery();
     }
 });
-modalMainImage.addEventListener('click', function() {
+modalMainImage.addEventListener('click', function () {
     this.classList.toggle('zoomed');
 });
 function openProductModal(product) {
@@ -452,25 +470,31 @@ function openProductModal(product) {
     modalDescription.textContent = product.description;
     modalRating.innerHTML = generateStarRating(product.rating);
     modalDiscount.textContent = product.discount > 0 ? `${product.discount}% OFF` : '';
-    const basePrice = 19.99; // This should be dynamic based on product
-    const priceTier1 = basePrice;
-    const priceTier2 = basePrice * 0.78; // 22% discount
-    const priceTier3 = basePrice * 0.62; // 38% discount
+    const basePrice = product.basePrice || 0;
+    const priceTier2 = basePrice * 1.25; // زيادة 25%
+    const priceTier1 = basePrice * 1.40; // زيادة 40%
+
+    // عرض الأسعار من الأغلى للأرخص
     document.getElementById('priceTier1').textContent = `$${priceTier1.toFixed(2)} / unit`;
     document.getElementById('priceTier2').textContent = `$${priceTier2.toFixed(2)} / unit`;
-    document.getElementById('priceTier3').textContent = `$${priceTier3.toFixed(2)} / unit`;
+    document.getElementById('priceTier3').textContent = `$${basePrice.toFixed(2)} / unit`;
+
     const galleryImages = product.gallery || [product.image, product.image, product.image];
     initGallery(galleryImages);
     productModal.classList.remove('hidden');
     preventBackgroundScroll(true);
+
     const scrollableContent = document.querySelector('.modal-scrollable');
     if (scrollableContent) {
         scrollableContent.scrollTop = 0;
     }
+
     addTouchEvents();
+
     setTimeout(() => {
         modalContent.classList.remove('scale-95', 'opacity-0');
         modalContent.classList.add('scale-100', 'opacity-100');
+
         setTimeout(() => {
             const getInTouchButton = document.querySelector('.mt-4.lg\\:mt-6 a, .mt-4.lg\\:mt-6 button');
             if (getInTouchButton) {
@@ -486,6 +510,7 @@ function openProductModal(product) {
             }
         }, 100);
     }, 50);
+
     window.currentProduct = product;
 }
 function preventBackgroundScroll(prevent) {
@@ -513,7 +538,7 @@ function addTouchEvents() {
 
     modalContent.addEventListener('touchmove', (e) => {
         if (!isDragging) return;
-        
+
         currentY = e.touches[0].clientY;
         const diffY = startY - currentY;
         const scrollableContent = document.querySelector('.modal-scrollable');
@@ -614,9 +639,9 @@ document.addEventListener('DOMContentLoaded', function () {
         showMoreBtn.addEventListener('click', function () {
             renderProducts(true);
             setTimeout(() => {
-                productsGrid.scrollIntoView({ 
-                    behavior: 'smooth', 
-                    block: 'start' 
+                productsGrid.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
                 });
             }, 300);
         });
@@ -686,13 +711,13 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 });
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const stickyProductsBtn = document.getElementById('stickyProductsBtn');
     const productsSection = document.getElementById('productsGrid');
     if (stickyProductsBtn && productsSection) {
-        stickyProductsBtn.addEventListener('click', function() {
-            productsSection.scrollIntoView({ 
-                behavior: 'smooth', 
+        stickyProductsBtn.addEventListener('click', function () {
+            productsSection.scrollIntoView({
+                behavior: 'smooth',
                 block: 'start'
             });
             productsSection.parentElement.classList.add('highlight-section');
