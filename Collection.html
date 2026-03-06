@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Collection - TradeX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="Images/Logo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/Collection.css">
+</head>
+
+<body class="bg-gray-50">
+    <header class="header-bg shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center space-x-3">
+                    <img src="Images/Logo.png" alt="Logo" class="h-12 w-auto">
+                </div>
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html"
+                        class="text-white hover:text-blue-300 font-medium transition duration-300">Home</a>
+                    <a href="CBMCalculator.html"
+                        class="text-white hover:text-blue-300 font-medium transition duration-300">CBM Calculator</a>
+                    <a href="GetInTouch.html"
+                        class="text-white hover:text-blue-300 font-medium transition duration-300">Get In Touch</a>
+                    <a href="https://www.track-trace.com/"
+                        class="text-white hover:text-blue-300 font-medium transition duration-300">Tracking</a>
+                    <div class="relative group">
+                        <a href="#"
+                            class="text-white font-bold border-b-2 border-white transition duration-300 flex items-center">
+                            Services <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div
+                            class="absolute top-full left-0 w-48 bg-white shadow-xl rounded-lg py-2 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300">
+                            <a href="Trade.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Transport</a>
+                            <a href="import.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Import</a>
+                            <a href="Export.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Export</a>
+                            <a href="Shipping.html" class="block px-4 py-2 hover:bg-blue-50 text-gray-700">Shipping</a>
+                        </div>
+                    </div>
+                    <a href="Collection.html"
+                        class="text-white font-bold border-b-2 border-white transition duration-300">Collection</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <div class="hidden md:flex items-center space-x-3">
+                        <a href="https://www.facebook.com/search/top?q=trade%20x%20for%20business%20solution&locale=ar_AR"
+                            class="text-white hover:text-blue-300 transition duration-300">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tradexforbusinesssolution"
+                            class="text-white hover:text-blue-300 transition duration-300">
+                            <i class="fab fa-instagram text-lg"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/trade-x-for-business-solutions/"
+                            class="text-white hover:text-blue-300 transition duration-300">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                        <a href="https://x.com/TradeXfbs?t=4dRdxHObZMZOnFpCdmNuTQ&s=09"
+                            class="text-white hover:text-blue-300 transition duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <button class="lg:hidden p-2 text-white" id="mobileMenuButton">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-menu-overlay fixed inset-0 bg-black bg-opacity-50 z-50 lg:hidden" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu fixed top-0 left-0 right-0 shadow-2xl z-50 lg:hidden" id="mobileMenu">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-8">
+                <img src="Images/Logo.png" alt="Logo" class="h-10 w-auto">
+                <button class="text-white hover:text-blue-300" id="closeMobileMenu">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <nav class="space-y-6">
+                <a href="index.html"
+                    class="block text-white hover:text-blue-300 font-medium text-lg transition duration-300">Home</a>
+                <a href="CBMCalculator.html"
+                    class="block text-white hover:text-blue-300 font-medium text-lg transition duration-300">CBM
+                    Calculator</a>
+                <a href="GetInTouch.html"
+                    class="block text-white hover:text-blue-300 font-medium text-lg transition duration-300">Get In
+                    Touch</a>
+                <a href="https://www.track-trace.com/" target="_blank" rel="noopener noreferrer"
+                    class="block text-white hover:text-blue-300 font-medium text-lg transition duration-300">Tracking</a>
+                <div class="relative">
+                    <button
+                        class="flex items-center justify-between w-full text-white font-bold border-b-2 border-white text-lg transition duration-300"
+                        id="mobileServicesButton">
+                        Services
+                        <i class="fas fa-chevron-down text-sm ml-2"></i>
+                    </button>
+                    <div class="mt-2 pl-4 space-y-3 hidden" id="mobileServicesDropdown">
+                        <a href="Trade.html"
+                            class="block text-blue-200 hover:text-white transition duration-300">Transport</a>
+                        <a href="import.html"
+                            class="block text-blue-200 hover:text-white transition duration-300">Import</a>
+                        <a href="Export.html"
+                            class="block text-blue-200 hover:text-white transition duration-300">Export</a>
+                        <a href="Shipping.html"
+                            class="block text-blue-200 hover:text-white transition duration-300">Shipping</a>
+                    </div>
+                </div>
+                <a href="Collection.html"
+                    class="block text-white font-bold border-b-2 border-white text-lg transition duration-300">Collection</a>
+            </nav>
+            <div class="mt-8 pt-6 border-t border-blue-300">
+                <div class="flex space-x-4 justify-center">
+                    <a href="https://www.facebook.com/search/top?q=trade%20x%20for%20business%20solution&amp;locale=ar_AR"
+                        class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                        <i class="fab fa-facebook-f text-white"></i>
+                    </a>
+                    <a href="https://www.instagram.com/tradexforbusinesssolution"
+                        class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                        <i class="fab fa-instagram text-white"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/trade-x-for-business-solutions/"
+                        class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                        <i class="fab fa-linkedin-in text-white"></i>
+                    </a>
+                    <a href="https://x.com/TradeXfbs?t=4dRdxHObZMZOnFpCdmNuTQ&amp;s=09"
+                        class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300"
+                        target="_blank">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-6 pt-6 border-t border-blue-300">
+                <div class="space-y-3 text-sm">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-phone text-blue-200 text-xs"></i>
+                        <span class="text-blue-200">+201221523127</span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-envelope text-blue-200 text-xs"></i>
+                        <span class="text-blue-200">info@tradexeg.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="trading-hero py-16 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto text-center mb-12 fade-in">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Create Your Perfect Collection</h1>
+                <p class="text-xl">Choose from our curated collections or customize your own with premium products</p>
+            </div>
+            <div class="max-w-6xl mx-auto slider-container fade-in">
+                <div class="slider" id="slider">
+                    <div class="slide">
+                        <img src="Images/Trade1.png" alt="Coffee Collection">
+                        <div class="slide-content">
+                            <h3 class="text-xl font-bold">Premium Coffee Cups</h3>
+                            <p>Keep beverages hot and hands comfortable</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="Images/Trade2.webp" alt="Pizza Boxes">
+                        <div class="slide-content">
+                            <h3 class="text-xl font-bold">Eco-Friendly Pizza Boxes</h3>
+                            <p>Keep pizza hot, fresh, and delicious</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="Images/Shipping1.png" alt="Restaurant Supplies">
+                        <div class="slide-content">
+                            <h3 class="text-xl font-bold">Complete Restaurant Supplies</h3>
+                            <p>Everything you need for your business</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn prev" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-btn next" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <div class="slider-nav" id="sliderNav">
+                    <div class="slider-dot active" data-index="0"></div>
+                    <div class="slider-dot" data-index="1"></div>
+                    <div class="slider-dot" data-index="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white section-fade">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl font-bold text-gray-800 mb-2">Featured Collection: Café & Kitchen Essentials</h2>
+                <p class="text-gray-600 text-lg">Premium cups and pizza boxes with exclusive discounts</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div
+                    class="collection-card bg-white rounded-xl shadow-lg overflow-hidden border-2 border-blue-100 stagger-item hover-lift">
+                    <div class="relative">
+                        <div
+                            class="w-full aspect-square bg-gradient-to-br from-gray-50 to-gray-100 rounded-t-xl overflow-hidden flex items-center justify-center p-4 hover-scale">
+                            <img src="Images/ForProducts/Coffee_Cup/Coffee_Cup.jpg" alt="Coffee Cup"
+                                class="max-w-full max-h-full object-contain drop-shadow-md"
+                                onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNGM0Y0RjYiLz48L3N2Zz4='">
+                        </div>
+                        <div class="badge-offer glow-animation">
+                            <i class="fas fa-fire mr-1"></i>25% OFF
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span
+                            class="text-sm text-blue-600 font-semibold bg-blue-50 px-2 py-1 rounded-full inline-block fade-in">Cups</span>
+                        <h3 class="text-xl font-bold text-gray-800 mt-3 mb-2">Premium Coffee Cup</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">Professional paper coffee cups designed to
+                            keep beverages hot and hands comfortable. Ideal for cafés, restaurants, and takeaways.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="text-sm text-gray-500 ml-2">4.8</span>
+                            </div>
+                        </div>
+                        <button
+                            onclick="addToCustomCollection({id: 7, name: 'Premium Coffee Cup', category: 'Cups', image: 'Images/ForProducts/Coffee_Cup/Coffee_Cup.jpg', discount: 25})"
+                            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 button-animate">
+                            <i class="fas fa-plus mr-2"></i>Add to My Collection
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="collection-card bg-white rounded-xl shadow-lg overflow-hidden border-2 border-blue-100 stagger-item hover-lift">
+                    <div class="relative">
+                        <div
+                            class="w-full aspect-square bg-gradient-to-br from-gray-50 to-gray-100 rounded-t-xl overflow-hidden flex items-center justify-center p-4 hover-scale">
+                            <img src="Images/ForProducts/Coffee_Cup_Covers/Coffee_Cup_Covers.jpg" alt="Coffee Cup Lids"
+                                class="max-w-full max-h-full object-contain drop-shadow-md"
+                                onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNGM0Y0RjYiLz48L3N2Zz4='">
+                        </div>
+                        <div class="badge-offer glow-animation">
+                            <i class="fas fa-fire mr-1"></i>20% OFF
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span
+                            class="text-sm text-blue-600 font-semibold bg-blue-50 px-2 py-1 rounded-full inline-block fade-in">Cups</span>
+                        <h3 class="text-xl font-bold text-gray-800 mt-3 mb-2">Coffee Cup Lids</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">Secure and spill-resistant coffee cup lids
+                            designed for convenience and safe on-the-go drinking.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="text-sm text-gray-500 ml-2">4.8</span>
+                            </div>
+                        </div>
+                        <button
+                            onclick="addToCustomCollection({id: 12, name: 'Coffee Cup Lids', category: 'Cups', image: 'Images/ForProducts/Coffee_Cup_Covers/Coffee_Cup_Covers.jpg', discount: 20})"
+                            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 button-animate">
+                            <i class="fas fa-plus mr-2"></i>Add to My Collection
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="collection-card bg-white rounded-xl shadow-lg overflow-hidden border-2 border-blue-100 stagger-item hover-lift">
+                    <div class="relative">
+                        <div
+                            class="w-full aspect-square bg-gradient-to-br from-gray-50 to-gray-100 rounded-t-xl overflow-hidden flex items-center justify-center p-4 hover-scale">
+                            <img src="Images/ForProducts/Pizza_box/Pizza_box.jpg" alt="Pizza Box"
+                                class="max-w-full max-h-full object-contain drop-shadow-md"
+                                onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjMwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNGM0Y0RjYiLz48L3N2Zz4='">
+                        </div>
+                        <div class="badge-offer glow-animation">
+                            <i class="fas fa-fire mr-1"></i>30% OFF
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span
+                            class="text-sm text-blue-600 font-semibold bg-blue-50 px-2 py-1 rounded-full inline-block fade-in">Pizza
+                            Box</span>
+                        <h3 class="text-xl font-bold text-gray-800 mt-3 mb-2">Premium Pizza Box</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">High-quality kraft pizza boxes made to
+                            keep your pizza hot, fresh, and delicious with eco-conscious materials.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="text-sm text-gray-500 ml-2">4.8</span>
+                            </div>
+                        </div>
+                        <button
+                            onclick="addToCustomCollection({id: 10, name: 'Premium Pizza Box', category: 'Pizza Box', image: 'Images/ForProducts/Pizza_box/Pizza_box.jpg', discount: 30})"
+                            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 button-animate">
+                            <i class="fas fa-plus mr-2"></i>Add to My Collection
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mb-16 fade-in">
+                <button onclick="getCollectionNow()"
+                    class="inline-block bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-4 px-10 rounded-lg transition duration-300 transform hover:scale-105 shadow-lg text-lg button-animate btn-glow">
+                    <i class="fab fa-whatsapp mr-3"></i>Get It Now via WhatsApp
+                </button>
+                <p class="text-gray-600 mt-4 text-sm">Send this collection directly to our team via WhatsApp</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 fade-in">Customize Your Collection</h2>
+
+            <div class="products-container">
+                <div class="products-left fade-in">
+                    <div class="collection-header">
+                        <h3 class="collection-title">Available Products</h3>
+                        <span class="collection-count" id="availableCount">0</span>
+                    </div>
+
+                    <input type="text" id="searchProducts" class="search-box" placeholder="Search products..."
+                        oninput="filterProducts()">
+
+                    <div class="category-filters">
+                        <button class="category-filter active" onclick="filterByCategory('all')"
+                            id="filter-all">All</button>
+                        <button class="category-filter" onclick="filterByCategory('Cups')"
+                            id="filter-cups">Cups</button>
+                        <button class="category-filter" onclick="filterByCategory('Restaurant')"
+                            id="filter-restaurant">Restaurant</button>
+                        <button class="category-filter" onclick="filterByCategory('Tissue')"
+                            id="filter-tissue">Tissue</button>
+                    </div>
+
+                    <div id="productsList" class="space-y-2"></div>
+                </div>
+
+                <div class="products-right fade-in">
+                    <div class="collection-header">
+                        <h3 class="collection-title">My Collection</h3>
+                        <span class="collection-count" id="collectionCount">0</span>
+                    </div>
+
+                    <div id="collectionList" class="min-h-[400px]"></div>
+
+                    <div id="collectionActions" class="mt-6 space-y-3 hidden">
+                        <button onclick="sendCollectionWhatsApp()" class="whatsapp-btn w-full">
+                            <i class="fab fa-whatsapp"></i>
+                            Send Collection to WhatsApp
+                        </button>
+                        <button onclick="clearCollection()" class="clear-all-btn w-full">
+                            <i class="fas fa-trash"></i>
+                            Clear Collection
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white pt-12 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <img src="Images/Logo.png" alt="Logo" class="h-10 w-auto">
+                    </div>
+                    <p class="text-gray-400 text-sm">Your trusted partner in global trade and export solutions.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                        <li><a href="Export.html" class="hover:text-white transition">Export</a></li>
+                        <li><a href="import.html" class="hover:text-white transition">Import</a></li>
+                        <li><a href="Collection.html" class="hover:text-white transition">Collection</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-4">Services</h3>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="Trade.html" class="hover:text-white transition">Transport</a></li>
+                        <li><a href="Shipping.html" class="hover:text-white transition">Shipping</a></li>
+                        <li><a href="CBMCalculator.html" class="hover:text-white transition">CBM Calculator</a></li>
+                        <li><a href="GetInTouch.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold mb-4">Contact Info</h3>
+                    <div class="space-y-3 text-gray-400 text-sm">
+                        <p><i class="fas fa-phone text-blue-400 mr-2"></i>+201221523127</p>
+                        <p><i class="fas fa-envelope text-blue-400 mr-2"></i>info@tradexeg.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2024 Trade X. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="https://www.facebook.com/search/top?q=trade%20x%20for%20business%20solution&locale=ar_AR"
+                            class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tradexforbusinesssolution"
+                            class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/trade-x-for-business-solutions/"
+                            class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="https://x.com/TradeXfbs?t=4dRdxHObZMZOnFpCdmNuTQ&s=09"
+                            class="text-gray-400 hover:text-white transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/export-script.js"></script>
+    <script src="js/collection.js"></script>
+</body>
+</html>
